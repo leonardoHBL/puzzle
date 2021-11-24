@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="./index.js" defer></script>
+    <link href="./styles/styles.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sliding Puzzle</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="sliding-puzzle">
+      <header><h1>Sliding Puzzle</h1></header>
+      <div class="frame">
+        <div class="grid">
+          <button
+            id="b1"
+            class="button button-blue"
+            onClick="processClick(this)"
+          >
+            1
+          </button>
+          <button
+            id="b2"
+            class="button button-blue"
+            onClick="processClick(this)"
+          >
+            2
+          </button>
+          <button
+            id="b3"
+            class="button button-blue"
+            onClick="processClick(this)"
+          >
+            3
+          </button>
+          <button
+            id="b4"
+            class="button button-blue"
+            onClick="processClick(this)"
+          >
+            4
+          </button>
+          <button
+            id="b5"
+            class="button button-blue"
+            onClick="processClick(this)"
+          >
+            5
+          </button>
+          <button
+            id="b6"
+            class="button button-blue"
+            onClick="processClick(this)"
+          >
+            6
+          </button>
+          <button
+            id="b7"
+            class="button button-blue"
+            onClick="processClick(this)"
+          >
+            7
+          </button>
+          <button
+            id="b8"
+            class="button button-blue"
+            onClick="processClick(this)"
+          >
+            8
+          </button>
+          <button
+            id="b9"
+            class="button empty-square"
+            onClick="processClick(this)"
+            aria-label="pivot"
+          ></button>
+        </div>
+      </div>
+      <div class="container-buttons">
+          <button id="instructions-button" type="button" onClick="showInstructions()">Instructions</button>
+          <button id="movement-count" type="button">Movements</button>
+          <button id="restart-button" type="button" onClick="shuffleGrid()">
+            Restart
+          </button>
+      </div>
+      <p id="winner-message">h</p>
+    </main>
+  </body>
+</html>
