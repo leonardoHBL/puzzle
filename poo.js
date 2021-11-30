@@ -14,7 +14,7 @@ class Board{
 
     /*
             Getter and setters
-    */
+    */   
     get movementsCounter(){
         return _private.get(this).properties['_movementsCounter'];
     }
